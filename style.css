@@ -22,7 +22,6 @@ header {
     width: 70%;
     height: 40%;
 
-    margin: 0;
     margin-left: 14%;
     margin-top: 10%;
 }
@@ -52,21 +51,20 @@ header {
     /* background-color: aquamarine;
     border: 10px solid red; */
 
-    margin-bottom: 0%;
-    margin-top: 0;
-
     display: flex;
 
     justify-content: center;
 }
 
-.copy-container div :nth-child(1) {
+.copy-container div :nth-child(1), .say-hello h2 {
     font-size: 100;
 
     margin-top: 20vh;
     margin-left: 10h;
 
     text-decoration: #FF7272 underline;
+
+    line-height: 100px;
 }
 
 .copy-container div svg { 
@@ -77,10 +75,9 @@ header {
     margin-left: 16vw;
 }
 
-.copy-container div h2 {
+.copy-container div h2, .say-hello h2 {
     margin-left: 14vw;
 }
-
 
 #about-me-text tspan {
     fill: #03C5CC;
@@ -91,5 +88,98 @@ header {
 }
 
 .image-gallery {
-    background-color: aquamarine;
+    /* background-color: aquamarine; */
+
+    font-size: 25;
+
+    margin-top: 10vh;
+}
+
+.image-gallery ul {
+    display: flex;
+    margin-left: 5vw;
+
+    list-style-type: none;
+}
+
+.image-gallery ul li {
+    margin-right: 8vw;
+}
+
+input:focus {
+    outline:none;
+}
+
+.say-hello {
+    /* background-color: aquamarine; */
+    margin-top: 10vh;
+    margin-bottom: 20vh;
+
+    display: flex;
+}
+
+.say-hello h2 {
+    margin-right: 20vw;
+    margin-left: 23vw;
+}
+
+.say-hello form {
+    /* background-color: aquamarine; */
+
+    margin-top: 15vh;
+}
+
+.say-hello form input, .say-hello form textarea {
+    border: 5px #0585D5 solid;
+
+    box-shadow: 10px -10px #0585D5;
+}
+
+.say-hello input, .say-hello textarea {
+    height: 5vh;
+    width: 20vw;
+
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+
+    font-family: inherit;
+    font-size: 30;
+}
+
+.say-hello input, .say-hello label {
+    display:block;
+}
+
+.say-hello label {
+    padding-left: 1vw;
+}
+
+#message {
+    height: 20vh;
+    width: 100%;
+
+    resize: none;
+    outline: none;
+
+    font-family: inherit;
+    font-size: 25;
+
+}
+
+footer {
+    width: 99.8%;
+    height:auto;
+
+    position: absolute;
+
+    margin:0px auto;
+
+    margin: 10 5 0 -6;
+    padding: 0 0 0 0;
+
+    background-color: #FFE2C4;
+}
+
+footer p {
+    margin-left: 30vw;
 }
