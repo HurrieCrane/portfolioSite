@@ -1,0 +1,95 @@
+html { box-sizing: border-box; margin:0; padding: 0; } 
+*, 
+*:before, 
+*:after { box-sizing: inherit; }
+
+body {
+    background-color: #FFF5EA;
+
+    font-family: Avenir;
+}
+
+header {
+    height: 90vh;
+    /*background-color: aquamarine; */
+}
+
+.header-bar-container {
+    /*background-color: aquamarine; */
+
+    position: absolute;
+
+    width: 70%;
+    height: 40%;
+
+    margin: 0;
+    margin-left: 14%;
+    margin-top: 10%;
+}
+
+.header-bar-container svg {
+    width: 100%;
+    height: 100%;
+}
+
+.header-bar-container h3  {
+    font-size: 50;
+    
+    font-weight: 800;
+
+    margin-left: 36%;
+    margin-top: 12%;
+}
+
+.copy-container {
+    display: flex;
+
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.copy-container div {
+    /* background-color: aquamarine;
+    border: 10px solid red; */
+
+    margin-bottom: 0%;
+    margin-top: 0;
+
+    display: flex;
+
+    justify-content: center;
+}
+
+.copy-container div :nth-child(1) {
+    font-size: 100;
+
+    margin-top: 20vh;
+    margin-left: 10h;
+
+    text-decoration: #FF7272 underline;
+}
+
+.copy-container div svg { 
+    width: 50%;
+    height: 100%;
+
+    margin-top: 14vh;
+    margin-left: 16vw;
+}
+
+.copy-container div h2 {
+    margin-left: 14vw;
+}
+
+
+#about-me-text tspan {
+    fill: #03C5CC;
+    font-size: 25;
+
+    text-decoration: none;
+    text-decoration-style: none;
+}
+
+.image-gallery {
+    background-color: aquamarine;
+}
