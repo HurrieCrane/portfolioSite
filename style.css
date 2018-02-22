@@ -13,10 +13,6 @@ body {
     font-family: Avenir;
 }
 
-.header-bar-container:first {
-    stroke: #000000;
-}
-
 header {
     height: 90vh;
     /*background-color: aquamarine; */
@@ -227,11 +223,8 @@ footer {
         /* background-color: aquamarine; */
 
         width: 100%;
-
         font-size: 45;
-
         margin: 7vw 0 0 15vw;
-
 
         text-align: left;
         
@@ -242,6 +235,8 @@ footer {
 
         width: 140%;
         height: 175%;
+
+        min-height: 640px;
     }
 
     .copy-container div {
@@ -258,7 +253,7 @@ footer {
     }
 
     .say-hello h2 {
-        margin: 0 0 10 10;
+        margin: 0 0 10 12;
         padding: 0 0 0 0;
     }
 
