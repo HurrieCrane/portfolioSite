@@ -224,17 +224,16 @@ footer {
 
         width: 100%;
         font-size: 45;
-        margin: 7vw 0 0 15vw;
+        margin: 5% 0 0 25%;
 
         text-align: left;
         
     }
 
     .header-bar-container svg {
-        /* background-color: aquamarine; */
+        background-color: aquamarine;
 
         width: 140%;
-        height: 175%;
 
         min-height: 640px;
     }
@@ -243,17 +242,12 @@ footer {
         flex-wrap: wrap;
     }
 
-    footer p {
-        padding-left: 15px;
-        padding-right: 15px;
-    }
-
     .say-hello {
         flex-wrap: wrap;
     }
 
     .say-hello h2 {
-        margin: 0 0 10 12;
+        margin: 0 0 10 70;
         padding: 0 0 0 0;
     }
 
@@ -267,5 +261,10 @@ footer {
 
     #message {
         max-width: 200px;
+    }
+    
+    footer p {
+        padding-left: 15px;
+        padding-right: 15px;
     }
 }
