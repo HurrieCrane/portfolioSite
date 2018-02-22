@@ -138,17 +138,17 @@ header {
     margin-bottom: 20vh;
 
     display: flex;
+    justify-content: center;
 }
 
 .say-hello h2 {
-    margin-right: 20vw;
-    margin-left: 23vw;
+    margin-right: 25vw;
+    margin-left: -2vw;
     margin-top: 23vh;
 }
 
 .say-hello form {
     /* background-color: aquamarine; */
-
     margin-top: 10vh;
 }
 
@@ -161,6 +161,8 @@ header {
 .say-hello input, .say-hello textarea {
     height: 5vh;
     width: 20vw;
+
+    min-width: 280px;
 
     margin-top: 1vh;
     margin-bottom: 1vh;
@@ -210,9 +212,52 @@ footer {
     }
 }
 
-@media screen and (max-width: 370px) {
+@media screen and (max-width: 540px) {
+
+    header {
+        margin: 0 0 0 0;
+    }
+
+    .header-bar-container {
+        margin: 0 0 0 0;
+    }
+
+    .header-bar-container svg {
+        /* background-color: aquamarine; */
+
+        width: 140%;
+        height: 100%;
+
+        /* max-width: 301px; */
+    }
+
+    .copy-container div {
+        flex-wrap: wrap;
+    }
+
     footer p {
         padding-left: 15px;
         padding-right: 15px;
+    }
+
+    .say-hello {
+        flex-wrap: wrap;
+    }
+
+    .say-hello h2 {
+        margin: 0 0 10 10;
+        padding: 0 0 0 0;
+    }
+
+    .say-hello form {
+        margin: 0 0 0 0;
+    }
+
+    .say-hello form label {
+        padding: 0 0 0 20px;
+    }
+
+    #message {
+        max-width: 200px;
     }
 }
