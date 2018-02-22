@@ -3,10 +3,18 @@ html { box-sizing: border-box; margin:0; padding: 0; }
 *:before, 
 *:after { box-sizing: inherit; }
 
+.container {
+    display: none;
+}
+
 body {
     background-color: #FFF5EA;
-
+    color: #453B31;
     font-family: Avenir;
+}
+
+.header-bar-container:first {
+    stroke: #000000;
 }
 
 header {
@@ -36,8 +44,8 @@ header {
     
     font-weight: 800;
 
-    margin-left: 36%;
-    margin-top: 12%;
+    margin-left: 30%;
+    margin-top: 11%;
 }
 
 .copy-container {
@@ -48,9 +56,6 @@ header {
 }
 
 .copy-container div {
-    /* background-color: aquamarine;
-    border: 10px solid red; */
-
     display: flex;
 
     justify-content: center;
@@ -60,23 +65,39 @@ header {
     font-size: 100;
 
     margin-top: 20vh;
-    margin-left: 10h;
 
     text-decoration: #FF7272 underline;
+    text-align: right;
 
     line-height: 100px;
+}
+
+.copy-container :nth-last-of-type(even) h2 {
+    margin: 0 0 0 0;
+    margin-top: 24vh;
+    padding: 0 0 0 0;
+}
+
+.copy-container :nth-last-of-type(even) svg  {
+    margin-top: 14vh;
+    margin-right: 10vw;
+    margin-left: 0;
+
+    /* padding: 0 0 0 0; */
 }
 
 .copy-container div svg { 
     width: 50%;
     height: 100%;
 
+    min-width: 600px;
+
     margin-top: 14vh;
-    margin-left: 16vw;
+    margin-left: 25vw;
 }
 
 .copy-container div h2, .say-hello h2 {
-    margin-left: 14vw;
+    margin-left: 200px;
 }
 
 #about-me-text tspan {
@@ -93,26 +114,27 @@ header {
     font-size: 25;
 
     margin-top: 10vh;
+    margin-bottom: 20vh;
 }
 
 .image-gallery ul {
     display: flex;
     margin-left: 5vw;
 
+    justify-content: center;
+
     list-style-type: none;
 }
 
 .image-gallery ul li {
-    margin-right: 8vw;
-}
 
-input:focus {
-    outline:none;
+    min-width: 260px;
+
+    margin-right: 8vw;
 }
 
 .say-hello {
     /* background-color: aquamarine; */
-    margin-top: 10vh;
     margin-bottom: 20vh;
 
     display: flex;
@@ -121,12 +143,13 @@ input:focus {
 .say-hello h2 {
     margin-right: 20vw;
     margin-left: 23vw;
+    margin-top: 23vh;
 }
 
 .say-hello form {
     /* background-color: aquamarine; */
 
-    margin-top: 15vh;
+    margin-top: 10vh;
 }
 
 .say-hello form input, .say-hello form textarea {
@@ -167,19 +190,29 @@ input:focus {
 }
 
 footer {
-    width: 99.8%;
-    height:auto;
-
-    position: absolute;
-
-    margin:0px auto;
-
-    margin: 10 5 0 -6;
-    padding: 0 0 0 0;
-
     background-color: #FFE2C4;
+
+    margin: 0 -8 -5 -10;
+
+    display: flex;
+    justify-content: center;
+
+    text-align: center;
 }
 
-footer p {
-    margin-left: 30vw;
+@media screen and (max-width: 1473px) {
+    .image-gallery ul {
+        flex-wrap: wrap;
+        justify-content: center;
+
+        margin: 0 0 0 20;
+        padding: 0 0 0 0;
+    }
+}
+
+@media screen and (max-width: 370px) {
+    footer p {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
 }
