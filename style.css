@@ -163,6 +163,7 @@ header {
     width: 20vw;
 
     min-width: 280px;
+    min-height: 50px;
 
     margin-top: 1vh;
     margin-bottom: 1vh;
@@ -222,13 +223,25 @@ footer {
         margin: 0 0 0 0;
     }
 
+    .header-bar-container h3 {
+        /* background-color: aquamarine; */
+
+        width: 100%;
+
+        font-size: 45;
+
+        margin: 7vw 0 0 15vw;
+
+
+        text-align: left;
+        
+    }
+
     .header-bar-container svg {
         /* background-color: aquamarine; */
 
         width: 140%;
-        height: 100%;
-
-        /* max-width: 301px; */
+        height: 175%;
     }
 
     .copy-container div {
