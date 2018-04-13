@@ -1,0 +1,172 @@
+html { box-sizing: border-box; margin:0; padding: 0; } 
+*, 
+*:before, 
+*:after { box-sizing: inherit; }
+
+body {
+    font-family: 'Avenir', 'Gotham';
+    background-color: #FFF5EA;
+}
+
+em br {
+    display: none;
+}
+
+div h2 {
+    font-size: 3em;
+    line-height: 1em;
+
+    margin-bottom: 1.5em;
+
+    text-decoration: underline #FF7272;
+
+    align-content: center;
+}
+
+.SVGWhiteBox {
+    box-shadow: 5px 5px 0px #0585D5;
+}
+
+.header-bar-container {
+    height: 100vh;
+
+    display: flex;
+    flex-wrap: wrap;
+
+    justify-content: center;
+
+    margin-top: 5%;
+    /* background-color: aquamarine; */
+}
+
+.header-bar-container svg {
+    /* background-color: aquamarine; */
+
+    height: 40%;
+
+    margin: 0 0 0 0;
+
+    font-size: inherit;
+}
+
+.header-bar-container h3 {
+    font-size: 2em;
+}
+
+#largeHeader {
+    margin: 0% 0% 0% 3%;
+}
+
+@media screen and (min-width: 390px) {
+    #smallHeader {
+        display: none;
+    }
+
+    #largeHeader {
+        margin: 6% 0% 5% 0;
+    }
+
+    .header-bar-container h3 {
+        margin: -10% 22% 0 18%;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    #smallHeader {
+        display: block;
+        height: 80%;
+    }
+
+    #largeHeader {
+        display: none;
+    }
+
+    .header-bar-container h3 {
+        margin: -18% 2% 0 2%;
+        text-align: center;
+    }
+}
+
+.copy-container div {
+    display: flex;
+    flex-wrap: wrap;
+
+    justify-content: center;
+
+    margin-bottom: 30%;
+}
+
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.image-gallery ul {
+    margin: 0;
+    padding: 0 4% 0 4%;
+
+    list-style-type: none;
+}
+
+.image-gallery li {
+    margin-bottom: 20%;
+}
+
+.say-hello {
+    display: flex;
+    flex-wrap: wrap;
+
+    justify-content: center;
+
+    margin: 30% 0 50% 0;
+}
+
+.say-hello h2 {
+    margin: 0 0 50 0;
+}
+
+.say-hello label {
+    /* background-color: aquamarine; */
+
+    margin: 0 0 0 5%;
+}
+
+.say-hello form input, .say-hello textarea {
+    font-size: 20;
+
+    margin-top: 3%;
+
+    height: 7vh;
+    width: 80vw;
+
+    display: block;
+
+    border: 5px #0585D5 solid;
+    box-shadow: 10px -10px #0585D5;   
+}
+
+#message {
+    height: 25vh;
+    width: 100%;
+
+    resize: none;
+    outline: none;
+
+    font-family: inherit;
+}
+
+footer {
+    margin: 0 -8 -10 -10;
+
+    display: flex;
+    justify-content: center;
+
+    text-align: center;
+
+    background-color: #FFE2C4;
+}
+
+footer p {
+    padding: 0 5% 0 5%;
+}
