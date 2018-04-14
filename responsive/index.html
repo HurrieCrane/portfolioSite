@@ -13,13 +13,13 @@
         <header>
             <div class="header-bar-container">
                 <!-- large header  -->
-                <svg class="SVGWhiteBox" id="largeHeader" viewBox="0 0 2500 800" preserveAspectRatio="xMinYMin meet" fill="#0000000">
+                <svg id="largeHeader" viewBox="0 0 2500 600" preserveAspectRatio="xMinYMin meet" fill="#0000000">
                     <g class="larger_header">
-                        <!-- <rect x="30" y="30" width="99%" height="70%" fill="#0585D5" /> -->
-                        <rect x="10" y="70" width="98%" height="70%" fill="#FFFFFF" stroke="#0585D5" stroke-width="20" />
+                        <rect x="30" y="30" width="99%" height="70%" fill="#0585D5" />
+                        <rect x="0" y="0" width="100%" height="100%" fill="#FFFFFF" stroke="#0585D5" stroke-width="20" />
 
-                        <text font-family="Avenir" font-size="23em" fill="#03C5CC">
-                            <tspan x="2.7%" y="58%">Joseph Crane</tspan>
+                        <text font-family="Avenir" font-size="24em" fill="#03C5CC">
+                            <tspan x="3%" y="69.8%">Joseph Crane</tspan>
                         </text>
                     </g>
                 </svg>
@@ -44,15 +44,15 @@
         <main>
             <div class="copy-container">
                 <div>
-                    <h2 class="sectionHeader">
-                        <em>about
-                            <br>me</em>
-                    </h2>
-
-                    <svg viewBox="0 0 800 1000" preserveAspectRatio="xMinYMin meet" fill="#0000000">
+                    <svg d="aboutMeSVG" class="copySVG" viewBox="0 0 800 1000" preserveAspectRatio="xMinYMin meet" fill="#0000000">
                         <rect x="30" y="0" width="95%" height="95%" fill="#0585D5" />
                         <rect x="10" y="20" width="95%" height="95%" fill="#FFFFFF" stroke="#0585D5" stroke-width="10" />
                     </svg>
+
+                    <h2 id="aboutMeH2" class="sectionHeader">
+                        <em>about
+                            <br>me</em>
+                    </h2>
                 </div>
 
                 <div>
@@ -61,40 +61,38 @@
                             <br>work</em>
                     </h2>
 
-                    <svg viewBox="0 0 800 1000" preserveAspectRatio="xMinYMin meet" fill="#0000000">
+                    <svg class="copySVG" viewBox="0 0 800 1000" preserveAspectRatio="xMinYMin meet" fill="#0000000">
                         <rect x="30" y="0" width="95%" height="95%" fill="#0585D5" />
                         <rect x="10" y="20" width="95%" height="95%" fill="#FFFFFF" stroke="#0585D5" stroke-width="10" />
                     </svg>
                 </div>
             </div>
 
-            <div class="image-gallery">
+            <div class="myimages">
                 <h2 class="sectionHeader">
                     <em>my images</em>
                 </h2>
-                <ul>
-                    <li>
+                <div>
+                    <div>
                         <img src="placeholder-image.svg">
                         <p class="image-caption">
                             Image caption: Wow, look at this image it's just so cool; mad skills are present.
                         </p>
-                    </li>
-
-                    <li>
+                    </div>
+                    <div>
                         <img src="placeholder-image.svg">
                         <p class="image-caption">
                             Image caption: Wow, look at this image it's just so cool; mad skills are present.
                         </p>
-                    </li>
-                    <li>
+                    </div>
+                    <div>
                         <img src="placeholder-image.svg">
                         <p>
                             Image caption: Wow, look at this image it's just so cool; mad skills are present.
                         </p>
-                    </li>
-                </ul>
+                    </div>
+                </div>
             </div>
-
             <div class="say-hello">
                 <h2 class="sectionHeader">
                     <em>say
