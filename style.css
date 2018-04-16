@@ -3,6 +3,13 @@ html { box-sizing: border-box; margin:0; padding: 0; }
 *:before, 
 *:after { box-sizing: inherit; }
 
+
+/* DEBUGGING STUFF GOES HERE: MAKE SURE TO DELETE ME BEFORE SUBMITTING */
+
+
+
+/* END OF DEBUGGING SECTION */
+
 body {
     font-family: 'Avenir', 'Gotham';
     background-color: #FFF5EA;
@@ -13,7 +20,7 @@ em br {
 }
 
 div h2 {
-    font-size: 3.5em;
+    font-size: 4em;
     line-height: 1em;
 
     margin-bottom: 1.5em;
@@ -47,8 +54,8 @@ div h2 {
 }
 
 .header-bar-container h3 {
-    font-size: 2em;
-    padding: 0 0 0 0.5%;
+    font-size: 2.5em;
+    padding: 0 0 0 3%;
 }
 
 .copy-container div {
@@ -98,17 +105,16 @@ div h2 {
     display: flex;
     flex-wrap: nowrap;
 
-    margin: 10% 0 10% 0;
+    margin: 12% 0 10% 0;
 }
 
 .say-hello form label {
-    font-size: 1em;
+    font-size: 1.2em;
 }
 
 .say-hello form input, #message {
     font-size: 20;
 
-    margin-top: 3%;
     margin-right: 50%;
 
     height: 7vh;
@@ -134,7 +140,7 @@ div h2 {
 }
 
 footer {
-    margin: 0 -8 -10 -10;
+    margin: 0% -0.4% -100% -0.5%;
 
     display: flex;
     justify-content: center;
@@ -245,7 +251,7 @@ footer p {
 
 @media screen and (min-width: 725px) {
     .say-hello form input, #message {
-        margin-top: 3.5%;
+        margin-top: 2.5%;
         margin-bottom: 3%;
     }
 }
