@@ -3,285 +3,254 @@ html { box-sizing: border-box; margin:0; padding: 0; }
 *:before, 
 *:after { box-sizing: inherit; }
 
-.container {
+body {
+    font-family: 'Avenir', 'Gotham';
+    background-color: #FFF5EA;
+}
+
+em br {
     display: none;
 }
 
-body {
-    background-color: #FFF5EA;
-    color: #453B31;
-    font-family: Avenir;
-}
+div h2 {
+    font-size: 3.5em;
+    line-height: 1em;
 
-header {
-    height: 90vh;
-    width: 100%;
-    /* background-color: aquamarine; */
+    margin-bottom: 1.5em;
+
+    text-decoration: underline #FF7272;
+
+    align-content: center;
 }
 
 .header-bar-container {
+    height: 100vh;
+
+    display: flex;
+    flex-wrap: wrap;
+
+    justify-content: center;
+
+    margin-top: 7%;
     /* background-color: aquamarine; */
-
-    position: absolute;
-
-    width: 100%;
-    height: 40%;
-
-    margin-left: 0%;
-    margin-top: 0%;
 }
 
 .header-bar-container svg {
-    width: 85%;
-    height: 110%;
+    height: 30%;
 
-    margin-top: 10%;
-    margin-left: 10%;
+    margin: 8% 0 0 0;
+
+    font-size: inherit;
+    --amount: calc(-16px * 10%);
+
+    box-shadow: 18px var(--amount) 0px #0585D5;
 }
 
-.header-bar-container h3  {
-    /* background-color: aquamarine; */
-
-    width: 100%;
-
-    font-size: 50;
-    
-    font-weight: 800;
-
-    margin-left: 0%;
-    margin-right: 0;
-    margin-top: 11%;
-}
-
-.copy-container {
-    display: flex;
-
-    justify-content: center;
-    flex-wrap: wrap;
+.header-bar-container h3 {
+    font-size: 2em;
+    padding: 0 0 0 0.5%;
 }
 
 .copy-container div {
     display: flex;
+    flex-wrap: wrap;
+    /* flex-flow: column; */
 
     justify-content: center;
+    margin-bottom: 20%;
 }
 
-.copy-container div :nth-child(1), .say-hello h2 {
-    font-size: 100;
-
-    margin-top: 20vh;
-
-    text-decoration: #FF7272 underline;
-    text-align: right;
-
-    line-height: 100px;
+#aboutMeH2 {
+    margin-left: 23%;
+    margin-right: 0%;
 }
 
-.copy-container :nth-last-of-type(even) h2 {
-    margin: 0 0 0 0;
-    margin-top: 24vh;
-    padding: 0 0 0 0;
+.copy-container div h2 {
+    margin-left: 0%;
+    margin-right: 20%;
+
+    margin-top: 27vh;
 }
 
-.copy-container :nth-last-of-type(even) svg  {
-    margin-top: 14vh;
-    margin-right: 10vw;
-    margin-left: 0;
-
-    /* padding: 0 0 0 0; */
+.myimages h2 {
+    text-align: center;
 }
 
-.copy-container div svg { 
-    width: 50%;
-    height: 100%;
+.myimages div {
+    display: flex; 
+    flex-wrap: nowrap;
 
-    min-width: 600px;
+    justify-content: center;
 
-    margin-top: 14vh;
-    margin-left: 25vw;
+    margin-left: 2%;
 }
 
-.copy-container div h2, .say-hello h2 {
-    margin-left: 200px;
-}
-
-#about-me-text tspan {
-    fill: #03C5CC;
-    font-size: 25;
-
-    text-decoration: none;
-    text-decoration-style: none;
-}
-
-.image-gallery {
-    /* background-color: aquamarine; */
-
-    font-size: 25;
-
-    margin-top: 10vh;
-    margin-bottom: 20vh;
-}
-
-.image-gallery ul {
+.myimages div div {
     display: flex;
-    margin-left: 5vw;
-
+    flex-wrap: wrap;
+    
+    margin-right: 5%;
     justify-content: center;
 
-    list-style-type: none;
-}
-
-.image-gallery ul li {
-
-    min-width: 260px;
-
-    margin-right: 5vw;
 }
 
 .say-hello {
-    /* background-color: aquamarine; */
-    margin-bottom: 20vh;
-
     display: flex;
-    justify-content: center;
+    flex-wrap: nowrap;
+
+    margin: 10% 0 10% 0;
 }
 
-.say-hello h2 {
-    margin-right: 25vw;
-    margin-left: -2vw;
-    margin-top: 23vh;
+.say-hello form label {
+    font-size: 1em;
 }
 
-.say-hello form {
-    /* background-color: aquamarine; */
-    margin-top: 10vh;
-}
+.say-hello form input, #message {
+    font-size: 20;
 
-.say-hello form input, .say-hello form textarea {
-    border: 5px #0585D5 solid;
+    margin-top: 3%;
+    margin-right: 50%;
 
-    box-shadow: 10px -10px #0585D5;
-}
+    height: 7vh;
+    width: 30vw;
 
-.say-hello input, .say-hello textarea {
-    height: 5vh;
-    width: 20vw;
-
-    min-width: 280px;
-    min-height: 50px;
-
-    margin-top: 1vh;
-    margin-bottom: 1vh;
+    display: block;
 
     font-family: inherit;
-    font-size: 30;
+
+    border: 4px #0585D5 solid;
+    box-shadow: 15px -15px #0585D5;   
 }
 
-.say-hello input, .say-hello label {
-    display:block;
-}
-
-.say-hello label {
-    padding-left: 1vw;
+.say-hello form input, #message {
+    font-size: 1.5em;
 }
 
 #message {
-    height: 20vh;
-    width: 100%;
+    height: 25vh;
 
     resize: none;
     outline: none;
-
-    font-family: inherit;
-    font-size: 25;
-
 }
 
 footer {
-    background-color: #FFE2C4;
-
-    margin: 0 -8 -5 -10;
+    margin: 0 -8 -10 -10;
 
     display: flex;
     justify-content: center;
 
     text-align: center;
+
+    background-color: #FFE2C4;
 }
 
-@media screen and (max-width: 1000px) {
-    .image-gallery ul {
-        flex-wrap: wrap;
-        justify-content: center;
-
-        margin: 0 0 0 10%;
-        padding: 0 0 0 0;
-    }
+footer p {
+    padding: 0 5% 0 5%;
 }
 
-@media screen and (max-width: 827px) {
-
-    header {
-        margin: 0 0 0 0;
+@media screen and (min-width: 400px) {
+    #smallHeader {
+        display: none;
     }
 
-    .header-bar-container {
-        margin: 0 0 0 0;
+    #largeHeader {
+        margin: 6% 0% 5% 0;
     }
 
     .header-bar-container h3 {
-        /* background-color: aquamarine; */
-
-        width: 100%;
-        font-size: 45;
-        margin: 0% 0 0 25%;
-
-        text-align: left;
-        
+        margin: -10% 22% 0 18%;
     }
 
-    .header-bar-container svg {
-        /* background-color: aquamarine; */
-
-        width: 140%;
-
-        min-height: 640px;
-    }
-
-    .copy-container div {
-        flex-wrap: wrap;
-    }
-
-    .say-hello {
-        /* background-color: #FFF5EA; */
-
-        flex-wrap: wrap;
+    .copy-container div svg {
+        max-width: 30%;
+        max-height: 30%;
     }
 
     .say-hello h2 {
-        margin: 100px 10% 0 0;
-        padding: 0 0 0 0;
-    }
+        margin-left: 20%;
+        margin-right: 0vw;
+        margin-top: 30vh;
+        margin-bottom: 100%;
 
-    .say-hello form {
-        margin: 0 0 0 0;
-    }
+        height: 15%;
+        width: 50vw;
+    }    
+}
 
+@media screen and (min-width: 310.2px) {
     .say-hello form label {
-        padding: 0 0 0 20px;
+        margin: 0;
+        margin-left: 5%;
     }
 
-    #message {
-        max-width: 200px;
-    }
-    
-    footer p {
-        padding-left: 15px;
-        padding-right: 15px;
+    .say-hello form input, #message {
+        margin-top: 5%;
+        margin-bottom: 3%;
     }
 }
 
-@media screen and (max-width: 595px) {
-    .say-hello h2 {
-        margin: 0px 0px 0px 12%;
+@media screen and (max-width: 580px) {
+    #smallHeader {
+        display: block;
+        height: 70%;
+
+        margin: 0;
+        margin-bottom: 20%;
     }
+
+    #largeHeader {
+        display: none;
+    }
+
+    .header-bar-container h3 {
+        margin: -18% 2% 0 2%;
+        text-align: center;
+    }
+        
+    .myimages div {
+        display: flex; 
+        flex-wrap: wrap;
+    
+        justify-content: center;
+
+        margin-left: 2%;
+    }
+
+    .say-hello {
+        display: flex;
+        flex-wrap: wrap;
+
+        justify-content: center;
+    }
+
+    .say-hello h2 {
+        text-align: center;
+
+        margin: 0 0 0 0;
+        margin-bottom: 5vh;
+    }
+
+    .say-hello form label {
+        margin-left: 5%;
+    }
+
+    .say-hello form input, #message {
+        margin: 0;
+        width: 80vw;
+
+        margin-top: 4%;
+        margin-bottom: 3%;
+    }
+}
+
+@media screen and (min-width: 725px) {
+    .say-hello form input, #message {
+        margin-top: 3.5%;
+        margin-bottom: 3%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .copy-container div h2 { order: 1;  margin-left: 0; margin-right: 0; padding: 0; }
+    .copy-container div svg { order: 2;}
 }
