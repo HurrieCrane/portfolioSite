@@ -10,6 +10,17 @@ html { box-sizing: border-box; margin:0; padding: 0; }
 
 /* END OF DEBUGGING SECTION */
 
+#redDots {
+    height: 100%;
+    width: 99%;
+
+    margin:  -7% 0 0 0;
+    padding: 0;
+
+    position: absolute;
+    z-index: -1;
+}
+
 body {
     font-family: 'Avenir', 'Gotham';
     background-color: #FFF5EA;
