@@ -22,8 +22,12 @@ html { box-sizing: border-box; margin:0; padding: 0; }
 }
 
 body {
-    font-family: 'Avenir', 'Gotham';
+    font-family: 'Avenir', 'Montserrat';
+    /* font-family: 'Montserrat', 'Avenir'; */
     background-color: #FFF5EA;
+
+    /* font-size-adjust: 0.475; */
+    /* -webkit-text-size-adjust: 0.475; */
 }
 
 em br {
@@ -31,12 +35,14 @@ em br {
 }
 
 div h2 {
-    font-size: 4em;
+    font-size: 4wv;
     line-height: 1em;
 
     margin-bottom: 1.5em;
 
-    text-decoration: underline #FF7272;
+    text-decoration: underline;
+    text-decoration-color: #FF7272;
+    -webkit-text-decoration-color: #FF7272;
 
     align-content: center;
 }
@@ -67,6 +73,10 @@ div h2 {
 .header-bar-container h3 {
     font-size: 2.5em;
     padding: 0 0 0 3%;
+
+    text-decoration: underline;
+    -webkit-text-decoration-color: #FF7272;
+
 }
 
 .copy-container div {
