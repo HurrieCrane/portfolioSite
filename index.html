@@ -8,6 +8,8 @@
         <meta lang="en" charset="utf-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+        <script src="js/fixFonts.js"></script>
+
         <!-- Possible alternatives to Gotham -->
         <!-- <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet"> -->
         <!-- <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet"> -->
@@ -25,12 +27,12 @@
 
             <div class="header-bar-container">
                 <!-- large header  -->
-                <svg id="largeHeader" viewBox="0 0 2500 600" preserveAspectRatio="xMinYMin meet" fill="#0000000">
+                <svg id="largeHeader" onload="fixFontSize()" viewBox="0 0 2500 600" preserveAspectRatio="xMinYMin meet" fill="#0000000">
                     <g>
                         <rect x="35" y="35" width="100%" height="100%" fill="#0585D5" />
                         <rect x="12" y="5" width="98%" height="90%" fill="#FFFFFF" stroke="#0585D5" stroke-width="20" />
 
-                        <text font-family="inherit;" font-size="24em" fill="#03C5CC">
+                        <text id="josephCrane" font-family="inherit;" font-size="24rem" fill="#03C5CC">
                             <tspan x="43" y="68%">Joseph Crane</tspan>
                         </text>
                     </g>

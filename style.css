@@ -22,12 +22,12 @@ html { box-sizing: border-box; margin:0; padding: 0; }
 }
 
 body {
-    /* font-family: 'Avenir', 'Montserrat'; */
-    font-family: 'Montserrat', 'Avenir';
+    font-family: 'Avenir', 'Montserrat';
+    /* font-family: 'Montserrat', 'Avenir'; */
     background-color: #FFF5EA;
 
-    /* Unfortunatly this only works on firefox :( */
-    font-size-adjust: 0.475;
+    /* font-size-adjust: 0.475; */
+    /* -webkit-text-size-adjust: 0.475; */
 }
 
 em br {
@@ -35,7 +35,7 @@ em br {
 }
 
 div h2 {
-    font-size: 4em;
+    font-size: 4wv;
     line-height: 1em;
 
     margin-bottom: 1.5em;
