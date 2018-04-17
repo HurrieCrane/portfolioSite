@@ -26,8 +26,8 @@ body {
     /* font-family: 'Montserrat', 'Avenir'; */
     background-color: #FFF5EA;
 
-    /* font-size-adjust: 0.475; */
-    /* -webkit-text-size-adjust: 0.475; */
+    font-size-adjust: 0.475;
+    -webkit-text-size-adjust: 0.475;
 }
 
 em br {
