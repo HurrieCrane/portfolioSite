@@ -6,8 +6,26 @@ html { box-sizing: border-box; margin:0; padding: 0; }
 #menuButton {
     position: fixed;
 
+    height: 5%;
+
     top:0;
     bottom: 0;
+}
+
+#Twitter_Social_Icon_Circle_Color, #githubIcon {
+    width: 10%;
+
+    margin-top: 58vh;
+    margin-left: 1vw;
+}
+
+#x {
+    padding-left: 80%;
+    padding-bottom: 0;
+
+    margin: 0;
+
+    font-size: 2em;
 }
 
 .sideNavagation {
@@ -26,6 +44,7 @@ html { box-sizing: border-box; margin:0; padding: 0; }
 
 .sideNavagation ul {
     list-style-type: none;
+    font-size: 1.5em;
 }
 
 body {
@@ -103,7 +122,6 @@ header {
 
 main {
     background-color: #FFF5EA;
-    /* margin-top: -5%; */
 }
 
 .copySVG {
