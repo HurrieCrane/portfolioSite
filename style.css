@@ -3,24 +3,30 @@ html { box-sizing: border-box; margin:0; padding: 0; }
 *:before, 
 *:after { box-sizing: inherit; }
 
+#menuButton {
+    position: fixed;
 
-/* DEBUGGING STUFF GOES HERE: MAKE SURE TO DELETE ME BEFORE SUBMITTING */
+    top:0;
+    bottom: 0;
+}
 
+.sideNavagation {
+    height: 100%;
+    width: 0;
+    z-index: 2;
+    position: fixed;
+    
+    top: 0;
+    left:0;
 
+    background-color: #ff7272;
+    overflow-x:  hidden;
+    transition: 0.5s;
+}
 
-/* END OF DEBUGGING SECTION */
-
-/* #redDots {
-    width: 100vw;
-    height: 971px;
-
-
-    margin:  -15% 0 0 0;
-    padding: 0;
-
-    position: absolute;
-    z-index: -1;
-} */
+.sideNavagation ul {
+    list-style-type: none;
+}
 
 body {
     font-family: 'Avenir', 'Montserrat';
@@ -52,9 +58,9 @@ div h2 {
 
     margin-bottom: 1.5em;
 
-    text-decoration: underline;
-    text-decoration-color: #FF7272;
-    -webkit-text-decoration-color: #FF7272;
+    /* text-decoration: underline; */
+    /* text-decoration-color: #FF7272; */
+    /* -webkit-text-decoration-color: #FF7272; */
 
     align-content: center;
 }
@@ -89,8 +95,10 @@ header {
 .header-bar-container h3 {
     font-size: 2.5em;
 
-    text-decoration: underline;
-    -webkit-text-decoration-color: #FF7272;
+    background-color: #FFF5EA;
+
+    /* text-decoration: underline; */
+    /* -webkit-text-decoration-color: #FF7272; */
 }
 
 main {
@@ -152,6 +160,9 @@ main {
 
 .image-caption {
     width: 85vw;
+
+    margin: 0;
+    padding: 0;
 }
 
 .say-hello {
@@ -218,21 +229,24 @@ footer p {
 
     .header-bar-container h3 {
         margin: -10% 22% 0 18%;
+        height: 10%;
     }
 
     .copy-container div svg {
         width: 30%;
         height: 30%;
+
+        
     }
 
     .say-hello h2 {
         margin-left: 20%;
-        margin-right: 0vw;
+        margin-right: 10%;
         margin-top: 30vh;
-        margin-bottom: 100%;
+        margin-bottom: 20%;
 
         height: 15%;
-        width: 50vw;
+        width: 25vw;
     }
 
     .galleryImage {
@@ -247,7 +261,10 @@ footer p {
 
 @media screen and (max-width: 570px) {
     .copy-container div h2 { order: 1;  margin-left: 0; margin-right: 0; padding: 0; }
-    .copy-container div svg { order: 2;}
+    .copy-container div svg { order: 2;
+        width: 100%;
+        height: 100%;
+    }
 
     #aboutMeH2 {
         margin-left: 0%;
@@ -327,7 +344,7 @@ footer p {
         display: flex;
         flex-wrap: wrap;
 
-        width: 100vw;
+        width: 95vw;
     }
 
     .myimages div div {
