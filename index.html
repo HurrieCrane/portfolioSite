@@ -18,9 +18,10 @@
 
     <body>
         <!-- <img id="redDots" src="dots.svg" alt="a collection of randomly assorted red dots"> -->
-        
+
         <span id="menuButton" style="font-size:30px;cursor:pointer" onclick="openMenu()">&#9776;</span>
         <div id="sideNav" class="sideNavagation">
+            <p id="x" onclick="closeMenu()" style="cursor:pointer">x</p>
             <ul>
                 <li><a href="#top" onclick="closeMenu()">The top</a></li>
                 <li><a href="#copy" onclick="closeMenu()">About me</a></li>
@@ -28,6 +29,13 @@
                 <li><a href="#imageGallery" onclick="closeMenu()">Image gallery</a></li>
                 <li><a href="#sayHello" onclick="closeMenu()">Say hello</a></li>
             </ul>
+
+            <a href="https://twitter.com/hurriecrane">
+                <img id="Twitter_Social_Icon_Circle_Color" src="images/Twitter_Social_Icon_Circle_Color.svg">
+            </a>
+            <a href="https://github.com/HurrieCrane">
+                <img id="githubIcon" src="images/icons8-github-50.png">
+            </a>
         </div>
         
         <!-- Div is needed to provide dimming and on click functionality sans-menu -->
