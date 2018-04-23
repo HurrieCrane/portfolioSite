@@ -1,30 +1,23 @@
 <!DOCTYPE HTML>
 <html>
-    <!-- TODO:
-        1. The form boxes are too large, they take up way to much room. Make these smaller.
-    -->
-
     <head>
         <meta lang="en" charset="utf-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+        <!-- JS stuff -->
         <script src="js/fixFonts.js"></script>
-
-        <!-- Possible alternatives to Gotham -->
-        <!-- <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet"> -->
-        <!-- <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet"> -->
-        <!-- <link href="https://fonts.googleapis.com/css?family=Raleway:400" rel="stylesheet">  -->
-        <link href="https://fonts.googleapis.com/css?family=Montserrat:400" rel="stylesheet"> 
-
+        <script src="js/placeSVGText.js"></script>
+        <!-- CSS stuff -->
         <link rel="stylesheet" type="text/css" href="style.css" />
+        <!-- Google font links -->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400" rel="stylesheet"> 
 
         <title>Joseph Crane's portfolio</title>
     </head>
 
     <body>
+        <!-- <img id="redDots" src="dots.svg" alt="a collection of randomly assorted red dots"> -->
         <header>
-            <img id="redDots" src="dots.svg" alt="a collection of randomly assorted red dots">
-
             <div class="header-bar-container">
                 <!-- large header  -->
                 <svg id="largeHeader" onload="fixFontSize()" viewBox="0 0 2500 600" preserveAspectRatio="xMinYMin meet" fill="#0000000">
@@ -57,31 +50,31 @@
         </header>
         <main>
             <div class="copy-container">
-
-                <!-- About me copy: -->
-                <!-- 
-                    
-
-
-
-
-                 -->
-
                 <div>
-                    <svg id="aboutMeSVG" class="copySVG" viewBox="0 0 800 1000" preserveAspectRatio="xMinYMin meet" fill="#0000000">
+                    <svg  class="copySVG" onload="placeText(0)" viewBox="0 0 800 1000" preserveAspectRatio="xMinYMin meet" fill="#0000000">
                         <rect x="3" y="35" width="95%" height="95%" fill="#0585D5" />
                         <rect x="35" y="3" width="95%" height="95%" fill="#FFFFFF" stroke="#0585D5" stroke-width="10" />
 
-                        <text x="7%" y="5%" fill="#03C5CC" font-family="inherit;" font-size="2em">
-                            <tspan y="5%">Here lay things and stuff, stuff and things etc.</tspan> 
-                            <tspan x="7%" y="9%">Also more things and stuff</tspan>
-                            <tspan x="7%" y="13%">Also more things and stuff</tspan>
-                            <tspan x="7%" y="17%">Also more things and stuff</tspan>
-                            <tspan x="7%" y="21%">Also more things and stuff</tspan>
-                            <tspan x="7%" y="25%">Also more things and stuff</tspan>
-                            <tspan x="7%" y="29%">Also more things and stuff</tspan>
-                            <tspan x="7%" y="33%">Also more things and stuff</tspan>
-                            <tspan x="7%" y="37%">Also more things and stuff</tspan>
+                        <text id="aboutme" x="7%" y="5%" fill="#03C5CC">
+                            <tspan y="5%">For a long time my passion has been games</tspan> 
+                            <tspan x="7%" y="9.2%">and in 2017 I was luckly enough to have</tspan>
+                            <tspan x="7%" y="13.4%">released one. My friends and I published</tspan>
+                            <tspan x="7%" y="17.6%"><a fill="#0585d5" href="https://play.google.com/store/apps/details?id=com.Shelf.Cables">Cables</a> 
+                                to the Google Play Store, the aim of</tspan>
+                            <tspan x="7%" y="21.8%"> which is to get as many cables into their ports</tspan>
+                            <tspan x="7%" y="26%">as possible without dying. My interest in</tspan>
+                            <tspan x="7%" y="30.2%"> programming started with Unity &amp; C#,</tspan>
+                            <tspan x="7%" y="34.4%">after becoming more proficient with C# I</tspan>
+                            <tspan x="7%" y="38.6%">looked at HLSL, a graphics programming</tspan>
+                            <tspan x="7%" y="42.8%">language.</tspan>
+                            <tspan x="7%" y="47.0%">  </tspan>
+                            <tspan x="7%" y="51.2%">However, my other interests are not solely</tspan>
+                            <tspan x="7%" y="55.4%">limited to programming; I am an avid coffee</tspan>
+                            <tspan x="7%" y="59.6%">drinker, I like to 3D model, I enjoy baking</tspan>
+                            <tspan x="7%" y="63.8%">bread, I also have an interest in linguistics</tspan>
+                            <tspan x="7%" y="68%">and typographic design.</tspan>
+                            <tspan x="7%" y="%"></tspan>
+                            <tspan x="7%" y="%"></tspan>
                         </text>
                     </svg>
 
@@ -90,26 +83,59 @@
                     </h2>
                 </div>
 
+                <!-- Pastwork copy: -->
+                <!-- 
+                    On 1st September 2016 I co-founded a company called Vandie Studios:
+                    at first we worked on a game called Hope, which was up for the
+                    YGD Bafta, and then a game called Chief. We then went to
+                    produce educational software, we worked on a system called
+                    Thanks which was a reward system for schools.
+
+                    On 1st August 2017 I left Vandie Studios to work on the Shelf brand
+                    and in 7th September 2017 we released Cables, our logo and a link
+                    to our site is included in the gallery below, and we hope to release
+                    more games in the future.
+                        
+                    When I left IV form I worked at a company called Mast Group, 
+                    a pharmaceutical supply company, developing a vial stock control
+                    system and after two months I left for Shop Direct.
+
+                    I joined Shop Direct in September of 2017. I'm currently an iOS developer,
+                    which I've come to very much enjoy.
+                 -->
+
                 <div>
                     <h2 class="sectionHeader">
                         <em>past <br>work</em>
                     </h2>
 
-                    <svg class="copySVG" viewBox="0 0 800 1000" preserveAspectRatio="xMinYMin meet" fill="#0000000">
+                    <svg  class="copySVG"  viewBox="0 0 800 1000" preserveAspectRatio="xMinYMin meet" fill="#0000000">
                         <rect x="35" y="35" width="95%" height="95%" fill="#0585D5" />
                         <rect x="3" y="3" width="95%" height="95%" fill="#FFFFFF" stroke="#0585D5" stroke-width="10" />
 
-                        <text x="3%" y="5%" fill="#03C5CC" font-family="inherit;" font-size="2em">
-                                <tspan y="5%">Here lay things and stuff, stuff and things etc.</tspan> 
-                                <tspan x="3%" y="9%">Also more things and stuff</tspan>
-                                <tspan x="3%" y="13%">Also more things and stuff</tspan>
-                                <tspan x="3%" y="17%">Also more things and stuff</tspan>
-                                <tspan x="3%" y="21%">Also more things and stuff</tspan>
-                                <tspan x="3%" y="25%">Also more things and stuff</tspan>
-                                <tspan x="3%" y="29%">Also more things and stuff</tspan>
-                                <tspan x="3%" y="33%">Also more things and stuff</tspan>
-                                <tspan x="3%" y="37%">Also more things and stuff</tspan>
-                            </text>
+                        <text id="pastwork" x="3%" y="5%" fill="#03C5CC">
+                            <!-- Text will be automatically placed here by js -->
+                            <tspan x="3%" y="5%">On 1st September 2016 I co-founded a </tspan>
+                            <tspan x="3%" y="9.2%">company called Vandie Studios: at first we </tspan>
+                            <tspan x="3%" y="13.4%">worked on a game called Hope, which was up </tspan>
+                            <tspan x="3%" y="17.6%">for the YGD Bafta, and then a game called </tspan>
+                            <tspan x="3%" y="21.8%">Chief. We then went to produce educational </tspan>
+                            <tspan x="3%" y="26.0%">software, we worked on a system called </tspan>
+                            <tspan x="3%" y="30.2%">Thanks which was a reward system for schools. </tspan>
+                            <tspan x="3%" y="34.4%">On 1st August 2017 I left Vandie Studios to</tspan>
+                            <tspan x="3%" y="38.6%">work on the Shelf brand and on 7th </tspan>
+                            <tspan x="3%" y="42.8%">september 2017 we released Cables, our logo </tspan>
+                            <tspan x="3%" y="47.0%">and a link to our site is included in the gallery </tspan>
+                            <tspan x="3%" y="51.2%">below, and we hope to release more games in</tspan>
+                            <tspan x="3%" y="55.4%">the future. When I left IV form I worked at a</tspan>
+                            <tspan x="3%" y="59.6%">company called Mast Group, a pharmaceutical</tspan>
+                            <tspan x="3%" y="63.8%">supply company, developing a vial stock </tspan>
+                            <tspan x="3%" y="68.0%">control system and after two months I left</tspan>
+                            <tspan x="3%" y="72.2%"> for Shop Direct. I joined Shop Direct in</tspan>
+                            <tspan x="3%" y="76.4%">September of 2017. I'm currently </tspan>
+                            <tspan x="3%" y="80.6%">an iOS developer, which I've come to </tspan>
+                            <tspan x="3%" y="84.8%">very much enjoy.</tspan>
+                        </text>
                     </svg>
                 </div>
             </div>
@@ -120,21 +146,26 @@
                 </h2>
                 <div>
                     <div>
-                        <img src="placeholder-image.svg" alt="a placeholder image">
+                        <!-- <a href="http://shelf.games/"> -->
+                            <img class="galleryImage" src="images/neutral.svg" alt="a placeholder image">
+                        <!-- </a> -->
                         <p class="image-caption">
-                            Image caption: Wow, look at this image it's just so cool; mad skills are present.
+                            Image caption: Shelf is a brand created in 2015, it has so far released one game called 
+                            <a href="https://play.google.com/store/apps/details?id=com.Shelf.Cables">Cables.</a>
                         </p>
                     </div>
                     <div>
-                        <img src="placeholder-image.svg" alt="a placeholder image">
+                        <img class="galleryImage" src="images/placeholder-image.svg" alt="a placeholder image">
                         <p class="image-caption">
-                            Image caption: Wow, look at this image it's just so cool; mad skills are present.
+                            Image caption: Shelf is a brand created in 2015, it has so far released one game called 
+                            <a href="https://play.google.com/store/apps/details?id=com.Shelf.Cables">Cables.</a>
                         </p>
                     </div>
                     <div>
-                        <img src="placeholder-image.svg" alt="a placeholder image">
-                        <p>
-                            Image caption: Wow, look at this image it's just so cool; mad skills are present.
+                        <img class="galleryImage" src="images/placeholder-image.svg" alt="a placeholder image">
+                        <p class="image-caption">
+                            Image caption: Shelf is a brand created in 2015, it has so far released one game called 
+                            <a href="https://play.google.com/store/apps/details?id=com.Shelf.Cables">Cables.</a>
                         </p>
                     </div>
                 </div>

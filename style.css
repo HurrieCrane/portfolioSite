@@ -10,32 +10,44 @@ html { box-sizing: border-box; margin:0; padding: 0; }
 
 /* END OF DEBUGGING SECTION */
 
-#redDots {
-    max-height: 100%;
-    min-width: 99%;
+/* #redDots {
+    width: 100vw;
+    height: 971px;
 
-    margin:  -7% 0 0 0;
+
+    margin:  -15% 0 0 0;
     padding: 0;
 
     position: absolute;
     z-index: -1;
-}
+} */
 
 body {
     font-family: 'Avenir', 'Montserrat';
-    /* font-family: 'Montserrat', 'Avenir'; */
     background-color: #FFF5EA;
 
-    font-size-adjust: 0.475;
-    -webkit-text-size-adjust: 0.475;
+    /* The background image is supposed to not scale with the window size */
+    background-image: url(images/dots.svg);
+    background-repeat: no-repeat;
+    background-size: 1885px 971px;
 }
 
 em br {
     display: none;
 }
 
+h2 {
+    display: block;
+    font-size: inherit;
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    -webkit-margin-start: 0;
+    -webkit-margin-end: 0;
+    font-weight: bold;
+}
+
 div h2 {
-    font-size: 4wv;
+    font-size: 3.5rem;
     line-height: 1em;
 
     margin-bottom: 1.5em;
@@ -47,8 +59,13 @@ div h2 {
     align-content: center;
 }
 
+header {
+    margin: 0;
+}
+
 .header-bar-container {
-    height: 100vh;
+    --header-bar-height: 100vh;
+    height: var(--header-bar-height);
 
     display: flex;
     flex-wrap: wrap;
@@ -56,27 +73,33 @@ div h2 {
     justify-content: center;
 
     margin-top: 7%;
-    /* background-color: aquamarine; */
 }
 
 .header-bar-container svg {
     height: 30%;
-
-    margin: 8% 0 0 0;
+    
+    padding-left: 4vw;
 
     font-size: inherit;
-    --amount: calc(-16px * 10%);
 
-    box-shadow: 18px var(--amount) 0px #0585D5;
+    font-size-adjust: 0.475;
+    -webkit-text-size-adjust: 0.475;
 }
 
 .header-bar-container h3 {
     font-size: 2.5em;
-    padding: 0 0 0 3%;
 
     text-decoration: underline;
     -webkit-text-decoration-color: #FF7272;
+}
 
+main {
+    background-color: #FFF5EA;
+    /* margin-top: -5%; */
+}
+
+.copySVG {
+    font-size: 2.2em;
 }
 
 .copy-container div {
@@ -86,6 +109,7 @@ div h2 {
 
     justify-content: center;
     margin-bottom: 20%;
+    padding-top: 10%;
 }
 
 #aboutMeH2 {
@@ -110,7 +134,7 @@ div h2 {
 
     justify-content: center;
 
-    margin-left: 2%;
+    margin-left: 3%;
 }
 
 .myimages div div {
@@ -119,7 +143,15 @@ div h2 {
     
     margin-right: 5%;
     justify-content: center;
+}
 
+.galleryImage {
+    width: 85vw;
+    height: 44vh;
+}
+
+.image-caption {
+    width: 85vw;
 }
 
 .say-hello {
@@ -175,7 +207,7 @@ footer p {
     padding: 0 5% 0 5%;
 }
 
-@media screen and (min-width: 400px) {
+@media screen and (min-width: 570px) {
     #smallHeader {
         display: none;
     }
@@ -201,6 +233,24 @@ footer p {
 
         height: 15%;
         width: 50vw;
+    }
+
+    .galleryImage {
+        width: 45vh;
+        height: 45vh;
+    }
+
+    .image-caption {
+        width: 23vw;
+    }
+}
+
+@media screen and (max-width: 570px) {
+    .copy-container div h2 { order: 1;  margin-left: 0; margin-right: 0; padding: 0; }
+    .copy-container div svg { order: 2;}
+
+    #aboutMeH2 {
+        margin-left: 0%;
     }    
 }
 
@@ -233,16 +283,7 @@ footer p {
         margin: -18% 2% 0 2%;
         text-align: center;
     }
-        
-    .myimages div {
-        display: flex; 
-        flex-wrap: wrap;
     
-        justify-content: center;
-
-        margin-left: 2%;
-    }
-
     .say-hello {
         display: flex;
         flex-wrap: wrap;
@@ -277,7 +318,23 @@ footer p {
     }
 }
 
-@media screen and (max-width: 400px) {
-    .copy-container div h2 { order: 1;  margin-left: 0; margin-right: 0; padding: 0; }
-    .copy-container div svg { order: 2;}
+@media screen and (max-width: 1630px) {
+    /* body {
+        background-color: red;
+    } */
+
+    .myimages div {
+        display: flex;
+        flex-wrap: wrap;
+
+        width: 100vw;
+    }
+
+    .myimages div div {
+        margin-bottom: 10vh;
+    }
+
+    .myimages img {
+        margin-right: 5%;
+    }
 }
